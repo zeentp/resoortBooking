@@ -193,18 +193,18 @@ class HomePage extends React.Component {
                     <div>
                         <img src={logo} class="logo" />
                     </div>
-                    <a href="#homePage" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">หน้าหลัก</a>
-                    <button class="dropdown-btn" id="navLabel" onClick={this.handleDropdownClick} >รายละเอียดห้อง<i onClick={this.handleDropdownClick} class="fa fa-caret-down"></i></button>
+                    <a href="#homePage" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">Home</a>
+                    <button class="dropdown-btn" id="navLabel" onClick={this.handleDropdownClick} >Details<i onClick={this.handleDropdownClick} class="fa fa-caret-down"></i></button>
                     <div class="dropdown-container">
-                        <a href="#BigSingleHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">Standard Room</a>
-                        <a href="#SmallSingleHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">Deluxe Room</a>
-                        <a href="#TwinHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">Suite Room</a>
-                        <a href="#RiverSideHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">บ้านริมน้ำ</a>
+                        <a href="#StandardRoom" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">Standard Room</a>
+                        <a href="#DeluxeRoom" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">Deluxe Room</a>
+                        <a href="#SuiteRoom" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">Suite Room</a>
+                        {/* <a href="#RiverSideHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">บ้านริมน้ำ</a>
                         <a href="#SmallThaiHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">เรือนไทยหลังเล็ก</a>
-                        <a href="#BigThaiHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">เรือนไทยหลังใหญ่</a>
+                        <a href="#BigThaiHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">เรือนไทยหลังใหญ่</a> */}
                     </div>
-                    <a href="#Map" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">แผนที่และการเดินทาง</a>
-                    <a href="#Contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">ติดต่อเรา</a>
+                    <a href="#Map" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">Map</a>
+                    <a href="#Contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">Contact Us</a>
 
                     <a onClick={this.showModal} class="w3-bar-item w3-button w3-hover-white" id="navLabel">ตรวจสอบสถานะการจอง</a>
                     <Modal
@@ -240,19 +240,19 @@ class HomePage extends React.Component {
                         <div class="w3-half">
                             <div class="container">
                                 <img src={room1} onclick="onClick(this)" alt="Concrete meets bricks" class="picture" />
-                                <a class="roomLabel">บ้านเดี่ยวหลังใหญ่ 600 บาท/คืน</a>
+                                <a class="roomLabel">Standard 400 บาท/คืน</a>
                             </div>
                             <div class="container">
                                 <img src={room3} onclick="onClick(this)" alt="Light, white and tight scandinavian design" class="picture" />
-                                <a class="roomLabel">บ้านแฝดหลังเล็ก 400 บาท/คืน</a>
+                                <a class="roomLabel">Deluxe 500 บาท/คืน</a>
                             </div>
                             <div class="container">
                                 <img src={room5} onclick="onClick(this)" alt="White walls with designer chairs" class="picture" />
-                                <a class="roomLabel">เรือนไทยหลังเล็ก 500 บาท/คืน</a>
+                                <a class="roomLabel">Suite 600 บาท/คืน</a>
                             </div>
                         </div>
 
-                        <div class="w3-half">
+                        {/* <div class="w3-half">
                             <div class="container">
                                 <img src={room2} onclick="onClick(this)" alt="Windows for the atrium" class="picture" />
                                 <a class="roomLabel1">บ้านแฝด 500 บาท/คืน</a>
@@ -265,22 +265,23 @@ class HomePage extends React.Component {
                                 <img src={room6} onclick="onClick(this)" alt="Scandinavian design" class="picture" />
                                 <a class="roomLabel">เรือนไทยหลังใหญ่ 800 บาท/คืน</a>
                             </div>
-                        </div>
+                        </div> */}
+
                     </div>
                     <hr />
-                    <div id="BigSingleHouse">
+                    <div id="StandardRoom">
                         <Room1 />
                     </div>
                     <hr />
-                    <div id="SmallSingleHouse">
+                    <div id="DeluxeRoom">
                         <Room2 />
                     </div>
                     <hr />
-                    <div id="TwinHouse">
+                    <div id="SuiteRoom">
                         <Room3 />
                     </div>
                     <hr />
-                    <div id="RiverSideHouse">
+                    {/* <div id="RiverSideHouse">
                         <Room4 />
                     </div>
                     <hr />
@@ -290,7 +291,7 @@ class HomePage extends React.Component {
                     <hr />
                     <div id="BigThaiHouse">
                         <Room6 />
-                    </div>
+                    </div> */}
                     <hr />
                     <div id="Map">
                         <Map />

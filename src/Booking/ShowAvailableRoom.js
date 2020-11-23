@@ -37,9 +37,9 @@ class ShowAvailableRoom extends Component {
         typeE: 0,
         typeF: 0,
         cost: 0,
-        priceRoomA: 600,
+        priceRoomA: 400,
         priceRoomB: 500,
-        priceRoomC: 400,
+        priceRoomC: 600,
         priceRoomD: 700,
         priceRoomE: 500,
         priceRoomF: 800,
@@ -49,7 +49,7 @@ class ShowAvailableRoom extends Component {
         for (let i = 0; i < dateList.length - 1; i++) {
             axios.get(`/${dateList[i]}`).then(resp => {
                 this.setState({
-                    typeA: resp.data.typeA - this.state.reserveA,
+                    typeA: resp.data.typeA - this.state.reserveA,  //ห้องที่มี-ห้องที่จอง 
                     typeB: resp.data.typeB - this.state.reserveB,
                     typeC: resp.data.typeC - this.state.reserveC,
                     typeD: resp.data.typeD - this.state.reserveD,
@@ -95,7 +95,7 @@ class ShowAvailableRoom extends Component {
 
     addAllDate = (date) => {
         console.log("Date : ", date);
-
+        
         date.forEach(element => {
             dateList.push(element);
         });
@@ -110,7 +110,6 @@ class ShowAvailableRoom extends Component {
         })
 
     }
-
 
     async show() {
         await dateList.forEach(date => {
@@ -328,13 +327,13 @@ class ShowAvailableRoom extends Component {
                     <Col span={15}>
                         <Card style={{ width: 610, height: 1600, backgroundColor: '#FFE8D8' }}>
                             <Card style={{ width: 550, marginBottom: '1%' }}>
-                                <div style={{ marginBotton: '3%', fontFamily: 'Kanit, sans-serif', fontSize: '30px' }}>บ้านเดี่ยวหลังใหญ่</div>
+                                <div style={{ marginBotton: '3%', fontFamily: 'Kanit, sans-serif', fontSize: '30px' }}>Standard</div>
                                 <Row>
                                     <Col span={12}>
                                         <img src={room1} style={{ width: '90%' }} />
                                     </Col>
                                     <Col span={12}>
-                                        <p style={{ fontFamily: 'Kanit, sans-serif', fontSize: '16px' }}>ราคา 600 บาท/คืน </p>
+                                        <p style={{ fontFamily: 'Kanit, sans-serif', fontSize: '16px' }}>ราคา 400 บาท/คืน </p>
                                         <p style={{ fontFamily: 'Kanit, sans-serif', fontSize: '16px' }}>จำนวนห้องว่าง {this.state.mintypeA} ห้อง</p>
                                         <div style={{ marginTop: '12%', fontFamily: 'Kanit, sans-serif', fontSize: '16px' }}>
                                             จำนวนห้องที่ต้องการ :
@@ -348,7 +347,7 @@ class ShowAvailableRoom extends Component {
                                 </Row>
                             </Card>
                             <Card style={{ width: 550, marginBottom: '1%' }}>
-                                <div style={{ marginBotton: '3%', fontFamily: 'Kanit, sans-serif', fontSize: '30px' }}>บ้านแฝด</div>
+                                <div style={{ marginBotton: '3%', fontFamily: 'Kanit, sans-serif', fontSize: '30px' }}>Deluxe</div>
                                 <Row>
                                     <Col span={12}>
                                         <img src={room3} style={{ width: '90%' }} />
@@ -368,13 +367,13 @@ class ShowAvailableRoom extends Component {
                                 </Row>
                             </Card>
                             <Card style={{ width: 550, marginBottom: '1%' }}>
-                                <div style={{ marginBotton: '3%', fontFamily: 'Kanit, sans-serif', fontSize: '30px' }}>บ้านแฝดหลังเล็ก</div>
+                                <div style={{ marginBotton: '3%', fontFamily: 'Kanit, sans-serif', fontSize: '30px' }}>Suite</div>
                                 <Row>
                                     <Col span={12}>
                                         <img src={room2} style={{ width: '90%' }} />
                                     </Col>
                                     <Col span={12}>
-                                        <p style={{ fontFamily: 'Kanit, sans-serif', fontSize: '16px' }}>ราคา 400 บาท/คืน </p>
+                                        <p style={{ fontFamily: 'Kanit, sans-serif', fontSize: '16px' }}>ราคา 600 บาท/คืน </p>
                                         <p style={{ fontFamily: 'Kanit, sans-serif', fontSize: '16px' }}>จำนวนห้องว่าง {this.state.mintypeC} ห้อง</p>
                                         <div style={{ marginTop: '12%', fontFamily: 'Kanit, sans-serif', fontSize: '16px' }}>
                                             จำนวนห้องที่ต้องการ :
@@ -387,7 +386,7 @@ class ShowAvailableRoom extends Component {
                                     </Col>
                                 </Row>
                             </Card>
-                            <Card style={{ width: 550, marginBottom: '1%' }}>
+                            {/* <Card style={{ width: 550, marginBottom: '1%' }}>
                                 <div style={{ marginBotton: '3%', fontFamily: 'Kanit, sans-serif', fontSize: '30px' }}>บ้านริมน้ำ</div>
                                 <Row>
                                     <Col span={12}>
@@ -446,7 +445,7 @@ class ShowAvailableRoom extends Component {
                                         </div>
                                     </Col>
                                 </Row>
-                            </Card>
+                            </Card> */}
                         </Card>
                     </Col>
                     <Col span={1}>

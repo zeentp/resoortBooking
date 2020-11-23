@@ -12,8 +12,8 @@ class Room2 extends React.Component {
     render() {
         return (
             <div>
-                <h1><b id="roomTLB">บ้านแฝดหลังเล็ก</b></h1>
-                <h1><b id="priceLB">400 บาท/คืน</b></h1>
+                <h1><b id="roomTLB">Deluxe</b></h1>
+                <h1><b id="priceLB">500 บาท/คืน</b></h1>
                 <hr class="w3-round"></hr>
                 <div>
                     <div class="row align-items-center no-gutters mb-4 mb-lg-5">
@@ -35,7 +35,7 @@ class Room2 extends React.Component {
                         </div>
                         <div class="col-xl-4 col-lg-5">
                             <div class="featured-text text-center text-lg-left">
-                                <h4 class="headLabel">บ้านแฝดหลังเล็ก</h4>
+                                <h4 class="headLabel"> Deluxe</h4>
                                 <p class="description">เหมาะสำหรับเข้าพัก 1-2 คน โดยหนึ่งบล็อคเป็นห้องสองหลังติดกัน สะดวกต่อคนที่ต้องการแยกห้องนอนกับเพื่อนหรือครอบครัว ราคาเพียง 400 บาทต่อคืน</p>
                             </div>
                         </div>

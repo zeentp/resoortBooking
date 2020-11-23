@@ -7,14 +7,14 @@ import room1 from '../img/room1/room.png';
 import room1Pic1 from '../img/room1/1.jpg';
 import room1Pic2 from '../img/room1/2.jpg';
 import room1Pic3 from '../img/room1/3.jpg';
-import room1Pic4 from '../img/room1/4.jpg';
+// import room1Pic4 from '../img/room1/4.jpg';
 
 class Room1 extends React.Component {
     render() {
         return (
             <div>
-                <h1><b id="roomTLB">บ้านเดี่ยวหลังใหญ่</b></h1>
-                <h1><b id="priceLB">600 บาท/คืน</b></h1>
+                <h1><b id="roomTLB">Standard</b></h1>
+                <h1><b id="priceLB">400 บาท/คืน</b></h1>
                 <hr class="w3-round"></hr>
                 <div>
                     <div class="row align-items-center no-gutters mb-4 mb-lg-5">
@@ -32,14 +32,14 @@ class Room1 extends React.Component {
                                 <div>
                                     <img id="imgInfo" src={room1Pic3} />
                                 </div>
-                                <div>
+                                {/* <div>
                                     <img id="imgInfo" src={room1Pic4} />
-                                </div>
+                                </div> */}
                             </Carousel>
                         </div>
                         <div class="col-xl-4 col-lg-5">
                             <div class="featured-text text-center text-lg-left">
-                                <h4 class="headLabel">บ้านเดี่ยวหลังใหญ่</h4>
+                                <h4 class="headLabel">Standard</h4>
                                 <p class="description">เพิ่มความเป็นตัวกับครอบครัวมากยิ่งขึ้น เหมาะกับคนที่มาครอบครัวเดียว รอบข้างมีความร่มรื่นด้วยต้นไม้ มีให้เลือกสรรค์มากมายหลายหลัง ราคาเพียง 600 บาทต่อคืน</p>
                             </div>
                         </div>

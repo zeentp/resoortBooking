@@ -43,7 +43,6 @@ class FormInfo extends Component {
         }
     }
 
-
     componentDidMount() {
         var rand = Math.floor(1000 + Math.random() * 9000)
         this.setState({ id: rand })
@@ -61,29 +60,29 @@ class FormInfo extends Component {
                 dateCount: resp.data[0].dateCount
             })
             if (resp.data[0].reserveA !== 0) {
-                const roomALabel = "บ้านเดี่ยวหลังใหญ่ (600 บาท/คืน) \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + this.state.reserveA + "   ห้อง";
+                const roomALabel = "Standard (400 บาท/คืน) \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + this.state.reserveA + "   ห้อง";
                 this.setState({ roomALabel: roomALabel })
             }
             if (resp.data[0].reserveB !== 0) {
-                const roomBLabel = "บ้านแฝดหลังเล็ก (400 บาท/คืน) \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + this.state.reserveB + "   ห้อง";
+                const roomBLabel = "Deluxe (500 บาท/คืน) \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + this.state.reserveB + "   ห้อง";
                 this.setState({ roomBLabel: roomBLabel })
             }
             if (resp.data[0].reserveC !== 0) {
-                const roomCLabel = "บ้านแฝด (500 บาท/คืน) \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + this.state.reserveC + "   ห้อง";
+                const roomCLabel = "Suite (600 บาท/คืน) \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + this.state.reserveC + "   ห้อง";
                 this.setState({ roomCLabel: roomCLabel })
             }
-            if (resp.data[0].reserveD !== 0) {
-                const roomDLabel = "บ้านริมน้ำ (700 บาท/คืน) \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + this.state.reserveD + "   ห้อง";
-                this.setState({ roomDLabel: roomDLabel })
-            }
-            if (resp.data[0].reserveE !== 0) {
-                const roomELabel = "เรือนไทยหลังเล็ก (500 บาท/คืน) \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + this.state.reserveE + "   ห้อง";
-                this.setState({ roomELabel: roomELabel })
-            }
-            if (resp.data[0].reserveF !== 0) {
-                const roomFLabel = "เรือนไทยหลังใหญ่ (800 บาท/คืน) \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + this.state.reserveF + "   ห้อง";
-                this.setState({ roomFLabel: roomFLabel })
-            }
+            // if (resp.data[0].reserveD !== 0) {
+            //     const roomDLabel = "บ้านริมน้ำ (700 บาท/คืน) \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + this.state.reserveD + "   ห้อง";
+            //     this.setState({ roomDLabel: roomDLabel })
+            // }
+            // if (resp.data[0].reserveE !== 0) {
+            //     const roomELabel = "เรือนไทยหลังเล็ก (500 บาท/คืน) \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + this.state.reserveE + "   ห้อง";
+            //     this.setState({ roomELabel: roomELabel })
+            // }
+            // if (resp.data[0].reserveF !== 0) {
+            //     const roomFLabel = "เรือนไทยหลังใหญ่ (800 บาท/คืน) \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" + this.state.reserveF + "   ห้อง";
+            //     this.setState({ roomFLabel: roomFLabel })
+            // }
         })
     }
 

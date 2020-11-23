@@ -19,7 +19,7 @@ class BookingPage extends React.Component {
                     </div>
                 </div>
                 <div class="w3-container" id="containerShow">
-                    <h1><b class="firstCha">F</b><b class="w3-jumbo">aang<b class="firstCha">F</b>ang Resort</b></h1>
+                    <h1><b class="firstCha">W</b><b class="w3-jumbo">ong<b class="firstCha">N</b>ok</b></h1>
                     <h1><b class="headLabel">เลือกจำนวนและประเภทห้องพัก</b></h1>
                     <hr class="w3-round"></hr>
                     <div>
