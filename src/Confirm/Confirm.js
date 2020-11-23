@@ -6,7 +6,7 @@ import axios from 'axios';
 import { Form, Input, Button, Select, Upload, Icon, message, DatePicker, TimePicker } from 'antd';
 import moment from 'moment';
 const { Option } = Select;
-const db = firebase.firestore();
+// const db = firebase.firestore();
 let fileCount = 0;
 
 function getBase64(img, callback) {

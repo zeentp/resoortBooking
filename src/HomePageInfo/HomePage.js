@@ -196,9 +196,9 @@ class HomePage extends React.Component {
                     <a href="#homePage" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">หน้าหลัก</a>
                     <button class="dropdown-btn" id="navLabel" onClick={this.handleDropdownClick} >รายละเอียดห้อง<i onClick={this.handleDropdownClick} class="fa fa-caret-down"></i></button>
                     <div class="dropdown-container">
-                        <a href="#BigSingleHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">บ้านเดี่ยวหลังใหญ่</a>
-                        <a href="#SmallSingleHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">บ้านแฝดหลังเล็ก</a>
-                        <a href="#TwinHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">บ้านแฝด</a>
+                        <a href="#BigSingleHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">Standard Room</a>
+                        <a href="#SmallSingleHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">Deluxe Room</a>
+                        <a href="#TwinHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">Suite Room</a>
                         <a href="#RiverSideHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">บ้านริมน้ำ</a>
                         <a href="#SmallThaiHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">เรือนไทยหลังเล็ก</a>
                         <a href="#BigThaiHouse" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="navLabel">เรือนไทยหลังใหญ่</a>
@@ -224,7 +224,7 @@ class HomePage extends React.Component {
                 </div>
 
                 <div class="w3-container" id="container">
-                    <h1><b id="homePage" class="firstCha">F</b><b class="w3-jumbo" style={{ fontFamily: "Poppins, sans-serif" }}>aang<b class="firstCha">F</b>ang Resort</b></h1>
+                    <h1><b id="homePage" class="firstCha">W</b><b class="w3-jumbo" style={{ fontFamily: "Poppins, sans-serif" }}>ong<b class="firstCha">N</b>ok</b></h1>
                     <div style={{ marginTop: "4%" }}>
                         <b style={{ fontFamily: "Kanit, sans-serif", fontSize: "25px", marginRight: "3%", color: "#616161" }} >ค้นหาห้องพัก</b>
                         <RangePicker disabledDate={disabledDate}
